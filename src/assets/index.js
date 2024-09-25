@@ -9,6 +9,7 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
+import azure from "./tech/azure.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
@@ -21,12 +22,19 @@ import java from "./tech/java.png";
 import cplusplus from "./tech/cplusplus.png";
 import c from "./tech/c.png";
 import bash from "./tech/bash.png";
+import csharp from "./tech/csharp.png"
+import swift from "./tech/swift.png"
 
 import CJSF from "./company/CJSF.png";
 import tutor from "./company/tutor.png";
 import mt from "./company/mt.png";
 import am from "./company/am.png";
 import bi from "./company/bi.png";
+import rad from "./company/rad.png";
+import rs from "./company/rs.png";
+import workday from "./company/workday.png";
+import teals from "./company/teals.png";
+import microsoft_teals from "./company/microsoft_teals.png";
 
 import puzzle from "./puzzle.png";
 import quote from "./quote.png";
@@ -39,6 +47,11 @@ import fish from "./fish.png";
 import mortgage from "./mortgage.png";
 import event from "./event.jpg.png";
 import trivia from "./trivia.png";
+import contacts from "./contacts.png";
+import expenses from "./expenses.png";
+import checklist from "./checklist.png";
+import processor from "./processor.png";
+import beats from "./beats.png";
 
 export {
   logo,
@@ -51,11 +64,13 @@ export {
   close,
   css,
   git,
+  azure,
   html,
   javascript,
   reactjs,
   CJSF,
   tutor,
+  rad,
   mt,
   am,
   bi,
@@ -70,6 +85,8 @@ export {
   java,
   cplusplus,
   c,
+  csharp,
+  swift,
   bash,
   ios1,
   ios2,
@@ -79,4 +96,13 @@ export {
   mortgage,
   event,
   trivia,
+  contacts,
+  expenses,
+  checklist,
+  processor,
+  rs,
+  workday,
+  teals,
+  beats,
+  microsoft_teals
 };

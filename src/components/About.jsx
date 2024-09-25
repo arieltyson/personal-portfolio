@@ -47,9 +47,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am an aspiring software developer with experience in Mobile Development &
-        Web Development. I possess experience with JavaScript frameworks like React, and
-        React Native. I am a quick learner and work well independently or as part of a team to
+        I am an aspiring software engineer with experience in Multi-Platform & Cloud Development. I possess full stack experience with frameworks like React, and
+        languages like C#. I am a quick learner and work well independently or as part of a team to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. I am very eager to gain as much knowledge as possible and make an impact to the real world !
       </motion.p>
