@@ -1,5 +1,9 @@
 # Personal Website Portfolio 🍄‍🟫
 
+<kbd>
+    <img src="https://github.com/user-attachments/assets/1bdea888-5b25-4a6b-8cbd-07113cae6977" alt="tourismBeatsLogo" width="1000" height="800">
+</kbd>
+
 ## Project Description 🎨
 
 This project acts as a deep dive into my professional career experience timeline, highlighting projects that I am proud of, work experience that I have garnered along the way, as well as testimonials from people I have collaborated with on this beautiful journey.
