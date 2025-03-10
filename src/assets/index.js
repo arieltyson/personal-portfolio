@@ -29,10 +29,12 @@ import CJSF from "./company/CJSF.png";
 import tutor from "./company/tutor.png";
 import mt from "./company/mt.png";
 import am from "./company/am.png";
+import bl from "./company/bl.png";
 import bi from "./company/bi.png";
 import rad from "./company/rad.png";
 import rs from "./company/rs.png";
 import workday from "./company/workday.png";
+import twitch from "./company/twitch.png";
 import teals from "./company/teals.png";
 import microsoft_teals from "./company/microsoft_teals.png";
 
@@ -73,6 +75,7 @@ export {
   rad,
   mt,
   am,
+  bl,
   bi,
   puzzle,
   quote,
@@ -102,6 +105,7 @@ export {
   processor,
   rs,
   workday,
+  twitch,
   teals,
   beats,
   microsoft_teals
