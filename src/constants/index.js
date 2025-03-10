@@ -11,7 +11,7 @@ import {
     rad,
     //tutor,
     microsoft_teals,
-    am,
+    //am,
     puzzle,
     //rails,
     python,
@@ -26,6 +26,8 @@ import {
     beats,
     azure,
     rs,
+    bl,
+    twitch,
     workday,
     teals,
     swift,
@@ -131,10 +133,25 @@ import {
   const experiences = [
     {
       title: "Software Engineer Intern",
+      company_name: "Twitch (Amazon)",
+      icon: twitch,
+      iconBg: "#383E56",
+      date: "May 2025 - August 2025",
+      points: [
+        "Developed a modular architecture for the Twitch iOS app, enabling independent feature development and reducing build times by 30%.",
+        "Optimized app startup time by refactoring initialization processes and lazy-loading non-critical components, resulting in a 25% improvement in launch speed.",
+        "Introduced a scalable image caching mechanism to efficiently handle high-resolution assets, reducing memory usage and enhancing scrolling performance.",
+        "Established a comprehensive suite of automated UI tests using XCTest, ensuring high-quality releases and reducing manual testing efforts by 50%.",
+        "Integrated a custom logging framework to monitor app performance metrics, facilitating proactive issue resolution and performance optimization.",
+        "Devised a robust hybrid caching system that combined in-memory and persistent storage strategies, ensuring rapid access to dynamic content even under variable network conditions.",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
       company_name: "Workday",
       icon: workday,
       iconBg: "#383E56",
-      date: "May 2024 - Present",
+      date: "May 2024 - December 2024",
       points: [
         "Delivered functionalities in Objective-C & Swift to improve developer productivity tools & frameworks for the Workday iOS application",
         "Architected API designs to allow access to protected APIs via tokenized authentication for improved client-server protocol security",
@@ -188,46 +205,6 @@ import {
         "Implemented new updates, such as database access to archived radio shows, and maintained the app stability, resulting in 50% fewer crashes",
       ],
     },
-    // MANIFESTING MY DREAM CAREER
-    // {
-    //   title: "Game Developer",
-    //   company_name: "Electronic Arts Inc.",
-    //   icon: EA,
-    //   iconBg: "#E6DEDD",
-    //   date: "January 2026 - December 2028",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Rust Developer",
-    //   company_name: "Amazon",
-    //   icon: amazon,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2029 - Dec 2030",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Senior Software Developer",
-    //   company_name: "Apple",
-    //   icon: apple,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2031 - Present",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
   ];
   
   const testimonials = [
@@ -241,11 +218,11 @@ import {
     },
     {
       testimonial:
-        "Ariel is truly a hard worker and makes a genuine effort to connect with his co-workers. Employees like him are the glue that hold our team together.",
-      name: "Abdullah Mohammedkamal",
-      designation: "Assistant Store Manager",
-      company: "The Home Depot Canada",
-      image: am,
+        "Ariel is truly a hard worker and makes a genuine effort to connect with his co-workers. Teammates like him are the glue that hold our team together.",
+      name: "Ben Longoria",
+      designation: "Senior Software Engineer",
+      company: "Workday",
+      image: bl,
     },
     {
       testimonial:
