@@ -9,20 +9,15 @@ import {
   reactjs,
   CJSF,
   rad,
-  //tutor,
   microsoft_teals,
-  //am,
   puzzle,
-  //rails,
   python,
   native,
   java,
-  //cplusplus,
   expenses,
   csharp,
   c,
   bash,
-  //processor,
   beats,
   azure,
   rs,
@@ -92,18 +87,10 @@ const technologies = [
     name: "azure",
     icon: azure,
   },
-  // {
-  //   name: "rust",
-  //   icon: rust,
-  // },
   {
     name: "csharp",
     icon: csharp,
   },
-  // {
-  //   name: "rails",
-  //   icon: rails,
-  // },
   {
     name: "python",
     icon: python,
@@ -116,10 +103,6 @@ const technologies = [
     name: "java",
     icon: java,
   },
-  // {
-  //   name: "c++",
-  //   icon:  cplusplus,
-  // },
   {
     name: "c",
     icon: c,
@@ -192,19 +175,6 @@ const experiences = [
       "Created a Python script to customize a JSON payload and utilize HTTP network methods to send a post request to an incoming webhook URL",
     ],
   },
-  // {
-  //   title: "Mobile App Developer",
-  //   company_name: "CJSF 90.1 FM",
-  //   icon: CJSF,
-  //   iconBg: "#383E56",
-  //   date: "May 2023 - August 2023",
-  //   points: [
-  //     "Deployed a fully functional mobile app using React Native, resulting in a 60% increase in user engagement on App Store & Play Store",
-  //     "Added live streaming, on-demand playback, scheduling, and push notification features within the UI, gaining positive customer feedback",
-  //     "Solved 100% of bug reports utilizing Jest to perform manual, automated and functional testing to ensure new features were compatible",
-  //     "Implemented new updates, such as database access to archived radio shows, and maintained the app stability, resulting in 50% fewer crashes",
-  //   ],
-  // },
 ];
 
 const testimonials = [
@@ -235,7 +205,6 @@ const testimonials = [
 ];
 
 const projects = [
-  
   {
     name: "Expense Tracker",
     description:
@@ -257,69 +226,27 @@ const projects = [
     image: expenses,
     source_code_link: "https://github.com/arieltyson/Enterprise-Expenses_Tracker",
   },
-//   {
-//     name: "Contacts Application",
-//     description:
-//       "A multi-platform contacts application made from a single codebase, built using Microsoft's cutting edge .NET MAUI Framework.",
-//     tags: [
-//       {
-//         name: "C#",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: ".NET MAUI",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "XAML",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: contacts,
-//     source_code_link: "https://github.com/arieltyson/contacts_app",
-//   },
-{
-  name: "Tourism Beats",
-  description:
-    "An iOS application that combines a plethora of Apple frameworks (MapKit, WeatherKit, TipKit, SceneKit, CoreLocation etc.) in an immersive SwiftUI interface !",
-  tags: [
-    {
-      name: "iOS",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "SwiftUI",
-      color: "green-text-gradient",
-    },
-    {
-      name: "XCode",
-      color: "pink-text-gradient",
-    },
-  ],
-  image: beats,
-  source_code_link: "https://github.com/arieltyson/Tourism-Beats",
-},
-  // {
-  //   name: "Quote Generator",
-  //   description:
-  //     "A web-based platform that allows users to generate motivational quotes to tackle the everyday struggles of demotivation.",
-  //   tags: [
-  //     {
-  //       name: "React",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "RESTful API",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "CSS",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: quote,
-  //   source_code_link: "https://github.com/arieltyson/RESTful-API-Quote-Generator",
-  // },
+  {
+    name: "Tourism Beats",
+    description:
+      "An iOS application that combines a plethora of Apple frameworks (MapKit, WeatherKit, TipKit, SceneKit, CoreLocation etc.) in an immersive SwiftUI interface !",
+    tags: [
+      {
+        name: "iOS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SwiftUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "XCode",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: beats,
+    source_code_link: "https://github.com/arieltyson/Tourism-Beats",
+  },
   {
     name: "15 Puzzle Solver",
     description:
@@ -341,132 +268,6 @@ const projects = [
     image: puzzle,
     source_code_link: "https://github.com/arieltyson/FifteenPuzzleSolver/tree/main",
   },
-  // {
-  //   name: "Rock Paper Scissors",
-  //   description:
-  //     "An interactive web platform that allows users to engage in an immersive gaming experience with an automated opponent.",
-  //   tags: [
-  //     {
-  //       name: "JavaScript",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "Html",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "CSS",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: rps,
-  //   source_code_link: "https://github.com/arieltyson/Rock-Paper-Scissors",
-  // },
-  // {
-  //   name: "Image Processor",
-  //   description:
-  //     "A Python application built with the purpose of manipulating the shape, colour and direction of images.",
-  //   tags: [
-  //     {
-  //       name: "Python",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "Editor",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "Image Processing",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: processor,
-  //   source_code_link: "https://github.com/arieltyson/ImageProcessor",
-  // },
-  // {
-  //   name: "To-Do List",
-  //   description:
-  //     "A web-based platform that allows users to keep track of pending and completed tasks.",
-  //   tags: [
-  //     {
-  //       name: "React",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "TypeScript",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "CSS",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: checklist,
-  //   source_code_link: "https://github.com/arieltyson/To-Do-List",
-  // },
-//   {
-//     name: "World Trivia",
-//     description:
-//       "A command line game that test users' knowledge of random facts about the World.",
-//     tags: [
-//       {
-//         name: "Ruby",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "Polymorphism",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "World Leaderboard",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: trivia,
-//     source_code_link: "https://github.com/arieltyson/World-Trivia",
-//   },
-//   {
-//     name: "Mortgage Calculator",
-//     description:
-//       "A constantly evolving mortgage calculator application built in Java.",
-//     tags: [
-//       {
-//         name: "Java",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "Version Control Master",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "Command Line Pro",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: mortgage,
-//     source_code_link: "https://github.com/arieltyson/mortgage-calculator",
-//   },
-//   {
-//     name: "Event Manager",
-//     description:
-//       "A Ruby application that makes calls to the GoogleCivic API to manage client information from a database.",
-//     tags: [
-//       {
-//         name: "Ruby",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "CSV",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "API",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: event,
-//     source_code_link: "https://github.com/arieltyson/Event-Manager",
-//   },
- ];
+];
 
 export { services, technologies, experiences, testimonials, projects };
