@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import brandMark from "@/assets/logo.svg";
+import brandMark from "@/assets/logo.jpg";
 import menuIcon from "@/assets/menu.svg";
 import closeIcon from "@/assets/close.svg";
 import { navigation } from "@/data/profile";
@@ -24,7 +24,7 @@ const Navbar = ({ theme, onToggleTheme }: NavbarProps): JSX.Element => {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-separator bg-surface/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
         <a href="#top" className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-text-primary">
-          <img src={brandMark} alt="Ariel Tyson logo" className="h-8 w-8" />
+          <img src={brandMark} alt="Ariel Tyson logo" className="h-8 w-8 rounded-lg object-cover" />
           <span className="hidden sm:inline-flex">Ariel Tyson</span>
         </a>
 
