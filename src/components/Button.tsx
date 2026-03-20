@@ -1,7 +1,7 @@
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
-type Variant = "primary" | "ghost";
+type Variant = "primary" | "ghost" | "glass";
 
 type BaseProps = {
   children: ReactNode;
@@ -30,6 +30,8 @@ const Button = (props: ButtonProps): JSX.Element => {
       "bg-accent text-white hover:bg-accent-hover shadow-sm",
     ghost:
       "text-accent hover:underline underline-offset-4",
+    glass:
+      "border border-black/10 bg-black/[0.06] text-text-primary backdrop-blur-md hover:bg-black/[0.10] dark:border-white/[0.25] dark:bg-white/[0.15] dark:text-white dark:hover:bg-white/[0.22]",
   };
 
   if ("href" in props && props.href) {

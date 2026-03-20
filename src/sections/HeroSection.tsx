@@ -59,7 +59,7 @@ const HeroSection = (): JSX.Element => {
         transition={{ duration: 0.5, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
       >
         <Button href="#projects">Explore Projects</Button>
-        <Button href="#contact" variant="ghost">
+        <Button href="#contact" variant="glass">
           Let&apos;s Connect
         </Button>
       </motion.div>
