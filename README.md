@@ -1,49 +1,70 @@
-# Personal Website Portfolio 🍄‍🟫
+# Ariel Tyson's Coding Universe
 
-<kbd>
-    <img src="https://github.com/user-attachments/assets/1bdea888-5b25-4a6b-8cbd-07113cae6977" alt="tourismBeatsLogo" width="1000" height="800">
-</kbd>
+A personal portfolio website built with React, TypeScript, and Tailwind CSS — designed around Apple's Human Interface Guidelines with full light/dark mode support and WCAG 2.2 AA accessibility compliance.
 
-## Project Description 🎨
+## Preview
 
-This project acts as a deep dive into my professional career experience timeline, highlighting projects that I am proud of, work experience that I have garnered along the way, as well as testimonials from people I have collaborated with on this beautiful journey.
+**Light Mode**
 
-## Deployment (GitHub Pages)
+![Light mode screenshot](docs/screenshot-light.png)
 
-- Active preview branch: `website_v2`
-- GitHub Actions workflow `.github/workflows/deploy-website-v2.yml` builds the site with Vite and publishes the `dist/` output to the `github-pages` environment whenever `website_v2` updates.
-- Custom domain `www.arieltyson.com` is copied into the build via `public/CNAME`.
-- If you create another version, branch from `website_v2`, adjust content, and the workflow will redeploy on push.
+**Dark Mode**
 
+![Dark mode screenshot](docs/screenshot-dark.png)
 
-## Technologies Used  💻
+## Live Site
 
-This project is crafted using the harmonious blend of HTML and CSS. These technologies are the backbone of the web, and they have been meticulously wielded to create an immersive and visually pleasing experience. As a work in progress, this application will be improved and maintained and documented the entire way through detailed commit messages to allow other developers to follow along.
+**[www.arieljtyson.com](https://www.arieljtyson.com)**
 
-- [x] HTML
-- [x] CSS
-- [x] React.js
-- [x] ThreeJS
+## Tech Stack
 
-## Skills Demonstrated 🥋
+- **Framework:** React 18 + TypeScript
+- **Styling:** Tailwind CSS 3 with CSS custom properties for theming
+- **Animations:** Framer Motion with `prefers-reduced-motion` support
+- **Build:** Vite
+- **Deployment:** GitHub Actions → GitHub Pages
+- **Design System:** Apple HIG-inspired — SF Pro font stack, semantic color tokens, Apple border radii
 
-This project provided a basis for understanding the operations required for effective user experience in a functional web page. The following skills were demonstrated:
+## Features
 
-- **LAYOUT**: The usage of grids to place items wherever the developer likes.
+- **Light/Dark Mode** — class-based toggle with `localStorage` persistence and system preference detection
+- **Interactive Cards** — CSS-only mouse-tracking glow effects and animated gradient borders
+- **Responsive** — mobile-first layout with collapsible navigation
+- **Accessible** — skip-to-content link, focus-visible outlines, ARIA labels, heading hierarchy, reduced motion support
+- **Performant** — no heavy 3D libraries; all visual effects are pure CSS
 
-- **USER EXPERIENCE**: A clean landscape promoting visibility, visual appeal and ease of use.
+## Sections
 
-- **USER INTERFACE**: An interactive interface allowing easy and effective navigation.
+| Section | Description |
+|---------|-------------|
+| **Hero** | Bold headline with animated pills and glassy CTA |
+| **About** | Introduction, service cards with glow effects, and tech toolbox |
+| **Experience** | Career timeline — Apple, Twitch (Amazon), Workday, Microsoft TEALS, RAD Torque |
+| **Projects** | Six featured projects with unique SVG illustrations |
+| **Testimonials** | Quotes from colleagues and students |
+| **Contact** | Email, GitHub, and LinkedIn with gradient card form |
 
-- **WEB DESIGN**: The brush of creativity to add a unique look to a functional tool.
+## Featured Projects
 
+- **Tourism Beats** — SwiftUI travel companion with MapKit, WeatherKit, and SceneKit
+- **NanoRender Engine** — C++ rendering engine with ray marching and Metal GPU shaders
+- **Focus AR** — Apple Swift Student Challenge winner with ARKit and CoreML
+- **Enterprise Expense Tracker** — ASP.NET Core MVC portal with Syncfusion dashboards
+- **AR Health** — AR wellness companion with heart-rate analytics and SceneKit
+- **PomoDuo** — Synchronized Pomodoro timer for couples using Screen Time APIs and Firebase
 
-## Contributing ⚙️
+## Development
 
-We believe that great knowledge like that which you possess is meant to be shared, and we welcome contributions from fellow geniuses and developers alike. If you have a beneficial or creative code snippet to add or a design improvement to suggest, feel free to fork our repository, make your enhancements, and submit a pull request. Together, let's make the world even more advanced.
+```bash
+npm install
+npm run dev        # Start dev server on localhost:5173
+npm run build      # Production build to dist/
+```
 
-## License 🪪
+## Deployment
 
-This project is licensed under the [MIT License](LICENSE), which means you're free to modify, distribute, and use the code as you see fit. Just remember to attribute the original work to **Ariel Tyson's GitHub** and keep the aspiring developer spirit alive!
+Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds with Vite and deploys to GitHub Pages with the custom domain `www.arieljtyson.com`.
 
----
+## License
+
+This project is licensed under the [MIT License](LICENSE).

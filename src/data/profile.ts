@@ -319,8 +319,8 @@ export const contactChannels: ContactChannel[] = [
   {
     id: "email",
     label: "Email",
-    value: "ariel.tyson@icloud.com",
-    href: "mailto:ariel.tyson@icloud.com"
+    value: "ariel30190@hotmail.com",
+    href: "mailto:ariel30190@hotmail.com"
   },
   {
     id: "github",
