@@ -105,7 +105,7 @@ export const heroContent: HeroContent = {
   subheading: "Software Engineer · Mobile & Machine Learning",
   description:
     "I build reliable, human-centered products across Apple platforms and the web, pairing thoughtful UX with secure, scalable services.",
-  meta: ["San Francisco • SFU CS 2026", "Swift • React • Azure", "AR, AI & developer tooling"]
+  meta: ["San Francisco Bay Area \u{1F1FA}\u{1F1F8} / Vancouver, BC \u{1F1E8}\u{1F1E6}", "Swift \u{00B7} Python \u{00B7} C++", "UX/UI \u{00B7} AR \u{00B7} ML \u{00B7} AI"]
 };
 
 export const aboutDescription =

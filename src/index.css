@@ -187,6 +187,40 @@ html.dark .tech-pill:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
+/* ── Hero pills ────────────────────────────────────────── */
+.hero-pill {
+  --pill-hue: 210;
+}
+
+.hero-pill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(
+    circle at 50% 50%,
+    hsla(var(--pill-hue), 80%, 65%, 0.08),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.hero-pill:hover::before {
+  opacity: 1;
+}
+
+.hero-pill:hover {
+  border-color: hsla(var(--pill-hue), 60%, 55%, 0.3);
+  box-shadow: 0 4px 20px -6px hsla(var(--pill-hue), 70%, 50%, 0.12);
+}
+
+html.dark .hero-pill:hover {
+  border-color: hsla(var(--pill-hue), 60%, 60%, 0.3);
+  box-shadow: 0 4px 20px -6px hsla(var(--pill-hue), 70%, 50%, 0.2);
+}
+
 /* ── Reduced motion ────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -200,7 +234,8 @@ html.dark .tech-pill:hover {
 
   .card-glow:hover,
   .card-gradient:hover,
-  .card-default:hover {
+  .card-default:hover,
+  .hero-pill:hover {
     transform: none !important;
   }
 }
