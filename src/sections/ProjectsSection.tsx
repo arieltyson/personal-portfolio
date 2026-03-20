@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import GlassCard from "@/components/GlassCard";
+import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import Button from "@/components/Button";
 import { projects } from "@/data/profile";
 
 const ProjectsSection = (): JSX.Element => {
   return (
-    <section id="projects" className="section-anchor mt-24 space-y-12">
+    <section id="projects" className="section-anchor space-y-12">
       <SectionHeader
         eyebrow="Projects"
         title="Featured Projects"
@@ -17,45 +17,45 @@ const ProjectsSection = (): JSX.Element => {
         {projects.map((project, index) => (
           <motion.article
             key={project.id}
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.35, delay: index * 0.06 }}
+            transition={{ duration: 0.5, delay: index * 0.06, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            <GlassCard className="flex h-full flex-col overflow-hidden p-0">
+            <Card className="flex h-full flex-col overflow-hidden p-0">
               <div className="relative h-48 overflow-hidden">
                 <img src={project.image} alt={project.name} className="h-full w-full object-cover" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-900/10 via-transparent to-slate-950/80" />
               </div>
               <div className="flex flex-1 flex-col gap-4 p-6">
                 <div className="flex items-center justify-between gap-3">
-                  <h3 className="text-xl font-semibold text-white">{project.name}</h3>
+                  <h3 className="text-lg font-semibold text-text-primary">{project.name}</h3>
                   <a
                     href={project.repo}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm text-cyan-200 transition hover:text-cyan-100"
+                    className="text-sm text-accent transition-colors hover:text-accent-hover"
+                    aria-label={`View ${project.name} repository`}
                   >
-                    View repo →
+                    View repo &rarr;
                   </a>
                 </div>
-                <p className="flex-1 text-sm leading-relaxed text-slate-300/85">{project.description}</p>
-                <div className="flex flex-wrap gap-2 text-xs text-slate-200/80">
+                <p className="flex-1 text-sm leading-relaxed text-text-secondary">{project.description}</p>
+                <div className="flex flex-wrap gap-2 text-xs">
                   {project.tags.map((tag) => (
-                    <span key={tag.name} className="rounded-full border border-white/12 bg-white/6 px-3 py-1">
+                    <span key={tag.name} className="rounded-full bg-surface-secondary px-3 py-1 font-medium text-text-secondary">
                       {tag.name}
                     </span>
                   ))}
                 </div>
               </div>
-            </GlassCard>
+            </Card>
           </motion.article>
         ))}
       </div>
 
-      <div className="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-slate-900/40 p-8 text-center backdrop-blur-lg">
-        <h3 className="text-xl font-semibold text-white">Looking for more?</h3>
-        <p className="max-w-2xl text-sm text-slate-300/80">
+      <div className="flex flex-col items-center gap-4 rounded-apple border border-separator bg-surface-secondary p-10 text-center">
+        <h3 className="text-xl font-semibold text-text-primary">Looking for more?</h3>
+        <p className="max-w-2xl text-sm text-text-secondary">
           I love discussing architecture, user experience, and teaching. If you&apos;d like to collaborate or review additional
           work, feel free to reach out.
         </p>

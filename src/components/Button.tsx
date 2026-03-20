@@ -23,12 +23,13 @@ type ButtonProps = ButtonAsAnchor | ButtonAsButton;
 
 const Button = (props: ButtonProps): JSX.Element => {
   const baseStyles =
-    "group inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300";
+    "group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
   const variants: Record<Variant, string> = {
     primary:
-      "bg-cyan-300 text-slate-950 shadow-sm hover:bg-cyan-200",
-    ghost: "border border-white/14 bg-transparent text-slate-100 hover:bg-white/8"
+      "bg-accent text-white hover:bg-accent-hover shadow-sm",
+    ghost:
+      "text-accent hover:underline underline-offset-4",
   };
 
   if ("href" in props && props.href) {
@@ -36,7 +37,7 @@ const Button = (props: ButtonProps): JSX.Element => {
 
     return (
       <a href={href} className={cn(baseStyles, variants[variant], className)} {...anchorProps}>
-        <span className="relative z-10 flex items-center gap-2">{children}</span>
+        {children}
       </a>
     );
   }
@@ -45,7 +46,7 @@ const Button = (props: ButtonProps): JSX.Element => {
 
   return (
     <button type={type} className={cn(baseStyles, variants[variant], className)} {...buttonProps}>
-      <span className="relative z-10 flex items-center gap-2">{children}</span>
+      {children}
     </button>
   );
 };

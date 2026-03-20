@@ -13,17 +13,21 @@ const SectionHeader = ({
   title,
   description,
   align = "left",
-  className
+  className,
 }: SectionHeaderProps): JSX.Element => {
   return (
-    <header className={cn("flex flex-col gap-3", align === "center" && "items-center text-center", className)}>
+    <header className={cn("flex flex-col gap-4", align === "center" && "items-center text-center", className)}>
       {eyebrow ? (
-        <span className="inline-flex max-w-fit items-center rounded-full border border-white/12 bg-white/8 px-3 py-1 text-xs font-medium text-slate-200/85">
+        <span className="text-xs font-semibold uppercase tracking-widest text-text-secondary">
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="text-3xl font-semibold tracking-tight text-slate-100 sm:text-[2.4rem]">{title}</h2>
-      {description ? <p className="max-w-3xl text-base text-slate-300/85 sm:text-lg">{description}</p> : null}
+      <h2 className="text-headline font-semibold tracking-tight text-text-primary sm:text-display">
+        {title}
+      </h2>
+      {description ? (
+        <p className="max-w-2xl text-lg leading-relaxed text-text-secondary">{description}</p>
+      ) : null}
     </header>
   );
 };

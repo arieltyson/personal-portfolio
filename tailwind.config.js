@@ -1,20 +1,43 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  mode: "jit",
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
-        "blue-350": "#89CFF0", 
+        surface: "var(--color-surface)",
+        "surface-secondary": "var(--color-surface-secondary)",
+        "text-primary": "var(--color-text-primary)",
+        "text-secondary": "var(--color-text-secondary)",
+        accent: "var(--color-accent)",
+        "accent-hover": "var(--color-accent-hover)",
+        separator: "var(--color-separator)",
+      },
+      fontFamily: {
+        apple: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "SF Pro Display",
+          "SF Pro Text",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+      },
+      fontSize: {
+        hero: ["96px", { lineHeight: "1.05", fontWeight: "700", letterSpacing: "-0.015em" }],
+        display: ["64px", { lineHeight: "1.05", fontWeight: "700", letterSpacing: "-0.009em" }],
+        headline: ["48px", { lineHeight: "1.08", fontWeight: "600", letterSpacing: "-0.003em" }],
+      },
+      borderRadius: {
+        "apple-sm": "12px",
+        apple: "18px",
+        "apple-lg": "22px",
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #211e35",
+        card: "0 4px 24px var(--shadow-card)",
+        "card-hover": "0 8px 40px var(--shadow-card-hover)",
       },
       screens: {
         xs: "450px",
