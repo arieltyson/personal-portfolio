@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="100%" stop-color="#5E5CE6"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="300" y1="80" x2="300" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.7)"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="0" fill="url(#bg)"/>
+  <!-- Globe grid -->
+  <circle cx="300" cy="200" r="120" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" fill="none"/>
+  <ellipse cx="300" cy="200" rx="70" ry="120" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" fill="none"/>
+  <ellipse cx="300" cy="200" rx="120" ry="70" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" fill="none"/>
+  <line x1="180" y1="200" x2="420" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <line x1="300" y1="80" x2="300" y2="320" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Map pin -->
+  <g transform="translate(300, 170)">
+    <path d="M0-50c-22 0-40 18-40 40 0 30 40 65 40 65s40-35 40-65c0-22-18-40-40-40z" fill="url(#pin)" opacity="0.9"/>
+    <circle cx="0" cy="-10" r="15" fill="#0A84FF"/>
+  </g>
+  <!-- Decorative dots -->
+  <circle cx="180" cy="140" r="4" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="400" cy="260" r="3" fill="rgba(255,255,255,0.25)"/>
+  <circle cx="220" cy="280" r="3.5" fill="rgba(255,255,255,0.2)"/>
+</svg>

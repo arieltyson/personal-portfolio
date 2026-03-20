@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF375F"/>
+      <stop offset="100%" stop-color="#FF6482"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Heart rate line -->
+  <polyline points="80,220 160,220 190,220 210,150 230,280 250,180 270,220 350,220 380,220 400,120 420,300 440,190 460,220 540,220" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Heart icon -->
+  <g transform="translate(300, 170)">
+    <path d="M0,25 C-40,-20 -80,-10 -80,20 C-80,50 -40,70 0,95 C40,70 80,50 80,20 C80,-10 40,-20 0,25z" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2" opacity="0.8"/>
+  </g>
+  <!-- AR corners around heart -->
+  <g stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round">
+    <path d="M195,100 L195,80 L215,80"/>
+    <path d="M405,100 L405,80 L385,80"/>
+    <path d="M195,280 L195,300 L215,300"/>
+    <path d="M405,280 L405,300 L385,300"/>
+  </g>
+  <!-- Pulse dots -->
+  <circle cx="300" cy="170" r="5" fill="white" opacity="0.6"/>
+  <circle cx="300" cy="170" r="12" fill="none" stroke="white" stroke-width="1" opacity="0.3"/>
+  <circle cx="300" cy="170" r="20" fill="none" stroke="white" stroke-width="0.5" opacity="0.15"/>
+</svg>

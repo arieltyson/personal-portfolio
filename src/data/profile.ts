@@ -26,9 +26,12 @@ import radLogo from "@/assets/company/rad.png";
 import tealsBadge from "@/assets/company/teals.png";
 import benBadge from "@/assets/company/bl.png";
 import rayBadge from "@/assets/company/rs.png";
-import expensesProject from "@/assets/expenses.png";
-import beatsProject from "@/assets/beats.png";
-import puzzleProject from "@/assets/puzzle.png";
+import tourismBeatsProject from "@/assets/projects/tourism-beats.svg";
+import nanorenderProject from "@/assets/projects/nanorender.svg";
+import focusArProject from "@/assets/projects/focus-ar.svg";
+import expensesProject from "@/assets/projects/expenses.svg";
+import arHealthProject from "@/assets/projects/ar-health.svg";
+import pomoduoProject from "@/assets/projects/pomoduo.svg";
 import githubIcon from "@/assets/github.png";
 
 export type NavigationLink = {
@@ -207,7 +210,7 @@ export const projects: Project[] = [
     name: "Tourism Beats",
     description:
       "A SwiftUI travel companion blending MapKit, WeatherKit, and SceneKit animations to spotlight local landmarks with live context.",
-    image: beatsProject,
+    image: tourismBeatsProject,
     repo: "https://github.com/arieltyson/Tourism-Beats",
     tags: [
       { name: "SwiftUI", color: "green-text-gradient" },
@@ -220,7 +223,7 @@ export const projects: Project[] = [
     name: "NanoRender Engine",
     description:
       "A lightweight rendering engine exploring ray marching, dynamic lighting, and GPU particle systems for interactive scenes.",
-    image: puzzleProject,
+    image: nanorenderProject,
     repo: "https://github.com/arieltyson/NanoRender-Engine",
     tags: [
       { name: "C++", color: "blue-text-gradient" },
@@ -233,7 +236,7 @@ export const projects: Project[] = [
     name: "Focus AR",
     description:
       "Apple Swift Student Challenge winner built with ARKit, CoreML, and Speech to deliver clutter-aware guidance and Siri-enabled assistance.",
-    image: expensesProject,
+    image: focusArProject,
     repo: "https://github.com/arieltyson/FocusAR-Swift-Student-Challenge",
     tags: [
       { name: "ARKit", color: "blue-text-gradient" },
@@ -259,7 +262,7 @@ export const projects: Project[] = [
     name: "AR Health",
     description:
       "An AR-powered wellness companion that layers heart-rate analytics and contextual overlays using SceneKit, CoreML, and SwiftUI.",
-    image: beatsProject,
+    image: arHealthProject,
     repo: "https://github.com/arieltyson/ARHealth",
     tags: [
       { name: "SceneKit", color: "blue-text-gradient" },
@@ -268,16 +271,16 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "neural-network",
-    name: "Neural Network",
+    id: "pomoduo",
+    name: "PomoDuo",
     description:
-      "Custom neural network experiments that explore gradient descent, activation tuning, and dataset visualization from scratch.",
-    image: puzzleProject,
-    repo: "https://github.com/arieltyson/neural-network",
+      "A synchronized Pomodoro timer for couples using Screen Time APIs, Firebase real-time sync, and Live Activities on Dynamic Island.",
+    image: pomoduoProject,
+    repo: "https://github.com/arieltyson/PomoDuo",
     tags: [
-      { name: "Python", color: "blue-text-gradient" },
-      { name: "AI", color: "green-text-gradient" },
-      { name: "Visualization", color: "pink-text-gradient" }
+      { name: "SwiftUI", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Screen Time", color: "pink-text-gradient" }
     ]
   }
 ];

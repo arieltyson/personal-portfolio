@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#30D158"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Dashboard card -->
+  <rect x="140" y="80" width="320" height="240" rx="18" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Bar chart -->
+  <g transform="translate(180, 260)">
+    <rect x="0" y="-60" width="30" height="60" rx="4" fill="rgba(255,255,255,0.5)"/>
+    <rect x="50" y="-100" width="30" height="100" rx="4" fill="rgba(255,255,255,0.65)"/>
+    <rect x="100" y="-80" width="30" height="80" rx="4" fill="rgba(255,255,255,0.55)"/>
+    <rect x="150" y="-130" width="30" height="130" rx="4" fill="rgba(255,255,255,0.8)"/>
+    <rect x="200" y="-90" width="30" height="90" rx="4" fill="rgba(255,255,255,0.6)"/>
+  </g>
+  <!-- Trend line -->
+  <polyline points="195,220 245,180 295,195 345,145 395,160" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Header dots -->
+  <circle cx="175" cy="110" r="4" fill="rgba(255,255,255,0.5)"/>
+  <circle cx="190" cy="110" r="4" fill="rgba(255,255,255,0.35)"/>
+  <circle cx="205" cy="110" r="4" fill="rgba(255,255,255,0.2)"/>
+</svg>

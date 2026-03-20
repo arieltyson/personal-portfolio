@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1d1d1f"/>
+      <stop offset="100%" stop-color="#2c2c2e"/>
+    </linearGradient>
+    <linearGradient id="face1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF453A"/>
+      <stop offset="100%" stop-color="#FF6961"/>
+    </linearGradient>
+    <linearGradient id="face2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9F0A"/>
+      <stop offset="100%" stop-color="#FFB340"/>
+    </linearGradient>
+    <linearGradient id="face3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BF5AF2"/>
+      <stop offset="100%" stop-color="#DA8FFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Grid lines -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="100" x2="600" y2="100"/><line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="300" x2="600" y2="300"/><line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+  </g>
+  <!-- 3D cube -->
+  <g transform="translate(300, 195)">
+    <!-- Back face -->
+    <polygon points="-60,-80 60,-80 60,40 -60,40" fill="url(#face3)" opacity="0.3"/>
+    <!-- Left face -->
+    <polygon points="-60,-80 -60,40 -100,10 -100,-50" fill="url(#face1)" opacity="0.7"/>
+    <!-- Top face -->
+    <polygon points="-60,-80 60,-80 20,-110 -100,-50" fill="url(#face2)" opacity="0.6"/>
+    <!-- Front face -->
+    <polygon points="-60,40 60,40 20,10 -100,10" fill="url(#face1)" opacity="0.4"/>
+    <!-- Right face -->
+    <polygon points="60,-80 60,40 20,10 20,-110" fill="url(#face3)" opacity="0.6"/>
+    <!-- Edges -->
+    <g stroke="rgba(255,255,255,0.25)" stroke-width="1.5" fill="none">
+      <polygon points="-60,-80 60,-80 60,40 -60,40"/>
+      <polygon points="-100,-50 20,-110 20,10 -100,10"/>
+      <line x1="-60" y1="-80" x2="-100" y2="-50"/>
+      <line x1="60" y1="-80" x2="20" y2="-110"/>
+      <line x1="60" y1="40" x2="20" y2="10"/>
+      <line x1="-60" y1="40" x2="-100" y2="10"/>
+    </g>
+  </g>
+  <!-- Light rays -->
+  <g opacity="0.15">
+    <line x1="120" y1="60" x2="240" y2="140" stroke="#FF9F0A" stroke-width="1"/>
+    <line x1="130" y1="50" x2="250" y2="135" stroke="#FF9F0A" stroke-width="0.5"/>
+    <circle cx="120" cy="60" r="8" fill="#FF9F0A" opacity="0.4"/>
+  </g>
+</svg>
