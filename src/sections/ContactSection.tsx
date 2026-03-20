@@ -39,8 +39,8 @@ const ContactSection = (): JSX.Element => {
         align="center"
       />
 
-      <Card className="p-6 sm:p-10">
-        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+      <Card variant="gradient" className="overflow-hidden">
+        <div className="grid gap-10 sm:p-4 lg:grid-cols-[0.85fr_1.15fr]">
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-text-primary">Let&apos;s build something great together.</h3>
             <p className="text-sm text-text-secondary">
@@ -49,7 +49,7 @@ const ContactSection = (): JSX.Element => {
             </p>
             <ul className="space-y-3 text-sm">
               {contactChannels.map((channel) => (
-                <li key={channel.id} className="flex items-center justify-between gap-4 rounded-apple-sm border border-separator bg-surface-secondary p-4">
+                <li key={channel.id} className="flex items-center justify-between gap-4 rounded-apple-sm border border-separator bg-surface-secondary/80 p-4 transition-all duration-300 hover:bg-surface-secondary dark:bg-white/5 dark:hover:bg-white/8">
                   <span className="font-medium text-text-primary">{channel.label}</span>
                   <a href={channel.href} className="truncate text-accent transition-colors hover:text-accent-hover" target="_blank" rel="noreferrer">
                     {channel.value}

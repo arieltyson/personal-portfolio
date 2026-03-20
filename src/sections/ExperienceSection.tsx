@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
 import { experiences } from "@/data/profile";
+import { useCardGlow } from "@/hooks/useCardGlow";
 
 const ExperienceSection = (): JSX.Element => {
+  const { onMouseMove } = useCardGlow();
+
   return (
     <section id="experience" className="section-anchor space-y-12">
       <SectionHeader
@@ -20,8 +23,9 @@ const ExperienceSection = (): JSX.Element => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: index * 0.04, ease: [0.25, 0.1, 0.25, 1] }}
+            onMouseMove={onMouseMove}
           >
-            <Card className="flex flex-col gap-6 p-6">
+            <Card variant="glow" hue={210 + index * 40} className="flex flex-col gap-6">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <span className="inline-flex h-14 w-14 items-center justify-center rounded-apple-sm bg-surface-secondary p-2">

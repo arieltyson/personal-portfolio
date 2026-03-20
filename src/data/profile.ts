@@ -14,6 +14,10 @@ import nativeIcon from "@/assets/tech/native.png";
 import javaIcon from "@/assets/tech/java.png";
 import cIcon from "@/assets/tech/c.png";
 import bashIcon from "@/assets/tech/bash.png";
+import cplusplusIcon from "@/assets/tech/cplusplus.png";
+import rustIcon from "@/assets/tech/rust.png";
+import typescriptIcon from "@/assets/tech/typescript.svg";
+import golangIcon from "@/assets/tech/golang.svg";
 import twitchLogo from "@/assets/company/twitch.png";
 import workdayLogo from "@/assets/company/workday.png";
 import tealsLogo from "@/assets/company/microsoft_teals.png";
@@ -98,7 +102,7 @@ export const navigation: NavigationLink[] = [
 export const heroContent: HeroContent = {
   heading: "Ariel Tyson's",
   highlight: "Coding Universe",
-  subheading: "Software Engineer · iOS & Cloud",
+  subheading: "Software Engineer · Mobile & Machine Learning",
   description:
     "I build reliable, human-centered products across Apple platforms and the web, pairing thoughtful UX with secure, scalable services.",
   meta: ["San Francisco • SFU CS 2026", "Swift • React • Azure", "AR, AI & developer tooling"]
@@ -126,6 +130,10 @@ export const technologies: Technology[] = [
   { name: "React Native", icon: nativeIcon },
   { name: "Java", icon: javaIcon },
   { name: "C", icon: cIcon },
+  { name: "C++", icon: cplusplusIcon },
+  { name: "TypeScript", icon: typescriptIcon },
+  { name: "Rust", icon: rustIcon },
+  { name: "Go", icon: golangIcon },
   { name: "Bash", icon: bashIcon }
 ];
 
