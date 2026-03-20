@@ -18,6 +18,7 @@ import cplusplusIcon from "@/assets/tech/cplusplus.png";
 import rustIcon from "@/assets/tech/rust.png";
 import typescriptIcon from "@/assets/tech/typescript.svg";
 import golangIcon from "@/assets/tech/golang.svg";
+import appleLogo from "@/assets/company/apple.svg";
 import twitchLogo from "@/assets/company/twitch.png";
 import workdayLogo from "@/assets/company/workday.png";
 import tealsLogo from "@/assets/company/microsoft_teals.png";
@@ -138,6 +139,16 @@ export const technologies: Technology[] = [
 ];
 
 export const experiences: Experience[] = [
+  {
+    id: "apple",
+    role: "Software Engineer Intern",
+    company: "Apple",
+    period: "May 2026 - August 2026",
+    highlights: [
+      "Working on the VoiceOver accessibility team to advance assistive technology across Apple platforms."
+    ],
+    icon: appleLogo
+  },
   {
     id: "twitch",
     role: "Software Engineer Intern",
