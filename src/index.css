@@ -187,6 +187,44 @@ html.dark .tech-pill:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
+/* ── Elevated text (Glassmorphism + Neumorphism) ──────── */
+.text-elevated {
+  --glow-hue: 220;
+  --glow-saturation: 80%;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+html.dark .text-elevated {
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    0 12px 36px rgba(0, 0, 0, 0.2),
+    0 0 60px hsla(var(--glow-hue), var(--glow-saturation), 65%, 0.06);
+}
+
+.text-elevated-accent {
+  --glow-hue: 210;
+  --glow-saturation: 90%;
+}
+
+.text-elevated-accent {
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    0 4px 12px hsla(var(--glow-hue), var(--glow-saturation), 50%, 0.1),
+    0 8px 30px hsla(var(--glow-hue), var(--glow-saturation), 50%, 0.06);
+}
+
+html.dark .text-elevated-accent {
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.5),
+    0 4px 16px hsla(var(--glow-hue), var(--glow-saturation), 60%, 0.2),
+    0 8px 40px hsla(var(--glow-hue), var(--glow-saturation), 55%, 0.12),
+    0 0 80px hsla(var(--glow-hue), var(--glow-saturation), 65%, 0.08);
+}
+
 /* ── Hero pills ────────────────────────────────────────── */
 .hero-pill {
   --pill-hue: 210;

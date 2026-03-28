@@ -22,7 +22,7 @@ const SectionHeader = ({
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="text-headline font-semibold tracking-tight text-text-primary sm:text-display">
+      <h2 className="text-elevated text-headline font-semibold tracking-tight text-text-primary sm:text-display">
         {title}
       </h2>
       {description ? (
