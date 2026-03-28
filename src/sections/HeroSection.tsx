@@ -9,9 +9,13 @@ const HeroSection = (): JSX.Element => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const heading = (
-    <h1 className="text-elevated text-5xl font-bold tracking-tight text-text-primary sm:text-display lg:text-hero">
-      {heroContent.heading}{" "}
-      <span className="text-elevated-accent text-accent">{heroContent.highlight}</span>
+    <h1 className="relative font-rounded text-5xl font-extrabold tracking-tight sm:text-display lg:text-hero">
+      <span className="glass-text" data-text={heroContent.heading}>
+        {heroContent.heading}
+      </span>{" "}
+      <span className="glass-text-accent" data-text={heroContent.highlight}>
+        {heroContent.highlight}
+      </span>
     </h1>
   );
 

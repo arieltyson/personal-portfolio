@@ -24,6 +24,12 @@ module.exports = {
           "Arial",
           "sans-serif",
         ],
+        rounded: [
+          "Nunito",
+          "Varela Round",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       fontSize: {
         hero: ["96px", { lineHeight: "1.05", fontWeight: "700", letterSpacing: "-0.015em" }],

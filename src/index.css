@@ -187,42 +187,149 @@ html.dark .tech-pill:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* ── Elevated text (Glassmorphism + Neumorphism) ──────── */
-.text-elevated {
-  --glow-hue: 220;
-  --glow-saturation: 80%;
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.06),
-    0 4px 8px rgba(0, 0, 0, 0.04),
-    0 8px 24px rgba(0, 0, 0, 0.03);
+/* ── Elevated glass text (Glassmorphism + Neumorphism) ─── */
+
+/*
+ * Light mode: frosted translucent fill via gradient + clip,
+ * neumorphic depth via layered text-shadows,
+ * aurora rim highlights baked into the gradient stops.
+ */
+.glass-text {
+  background: linear-gradient(
+    165deg,
+    rgba(60, 60, 70, 0.95) 0%,
+    rgba(40, 40, 50, 0.85) 25%,
+    rgba(80, 70, 100, 0.8) 50%,
+    rgba(50, 50, 65, 0.9) 75%,
+    rgba(60, 60, 70, 0.95) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none; /* text-shadow doesn't apply with clipped text; shadows go on wrapper */
+  position: relative;
+  filter:
+    drop-shadow(0 1px 1px rgba(0, 0, 0, 0.08))
+    drop-shadow(0 4px 8px rgba(0, 0, 0, 0.06))
+    drop-shadow(0 12px 28px rgba(0, 0, 0, 0.05));
 }
 
-html.dark .text-elevated {
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.4),
-    0 4px 12px rgba(0, 0, 0, 0.25),
-    0 12px 36px rgba(0, 0, 0, 0.2),
-    0 0 60px hsla(var(--glow-hue), var(--glow-saturation), 65%, 0.06);
+/* Aurora shimmer pseudo-element behind the text */
+.glass-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    135deg,
+    rgba(160, 140, 240, 0.2),
+    rgba(240, 160, 190, 0.15),
+    rgba(140, 200, 255, 0.18),
+    rgba(180, 160, 240, 0.12)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: blur(12px);
+  pointer-events: none;
 }
 
-.text-elevated-accent {
-  --glow-hue: 210;
-  --glow-saturation: 90%;
+html.dark .glass-text {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(230, 225, 245, 0.85) 20%,
+    rgba(200, 210, 240, 0.8) 40%,
+    rgba(240, 220, 235, 0.82) 60%,
+    rgba(220, 230, 250, 0.88) 80%,
+    rgba(245, 245, 247, 0.95) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter:
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))
+    drop-shadow(0 16px 40px rgba(0, 0, 0, 0.2));
 }
 
-.text-elevated-accent {
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.08),
-    0 4px 12px hsla(var(--glow-hue), var(--glow-saturation), 50%, 0.1),
-    0 8px 30px hsla(var(--glow-hue), var(--glow-saturation), 50%, 0.06);
+html.dark .glass-text::before {
+  background: linear-gradient(
+    135deg,
+    rgba(180, 160, 255, 0.3),
+    rgba(255, 180, 210, 0.2),
+    rgba(160, 220, 255, 0.25),
+    rgba(200, 180, 255, 0.15)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: blur(18px);
 }
 
-html.dark .text-elevated-accent {
-  text-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.5),
-    0 4px 16px hsla(var(--glow-hue), var(--glow-saturation), 60%, 0.2),
-    0 8px 40px hsla(var(--glow-hue), var(--glow-saturation), 55%, 0.12),
-    0 0 80px hsla(var(--glow-hue), var(--glow-saturation), 65%, 0.08);
+/* ── Accent glass text (for highlighted words) ──────────── */
+.glass-text-accent {
+  background: linear-gradient(
+    165deg,
+    rgba(0, 90, 200, 0.95) 0%,
+    rgba(0, 100, 220, 0.85) 30%,
+    rgba(80, 60, 200, 0.8) 55%,
+    rgba(0, 110, 230, 0.9) 80%,
+    rgba(0, 90, 200, 0.95) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  filter:
+    drop-shadow(0 1px 1px rgba(0, 80, 200, 0.12))
+    drop-shadow(0 4px 10px rgba(0, 80, 200, 0.08))
+    drop-shadow(0 12px 32px rgba(0, 80, 200, 0.06));
+}
+
+.glass-text-accent::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    135deg,
+    rgba(40, 120, 255, 0.3),
+    rgba(100, 60, 240, 0.2),
+    rgba(60, 160, 255, 0.25)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+html.dark .glass-text-accent {
+  background: linear-gradient(
+    165deg,
+    rgba(60, 160, 255, 0.95) 0%,
+    rgba(80, 150, 255, 0.88) 25%,
+    rgba(140, 120, 255, 0.82) 50%,
+    rgba(100, 180, 255, 0.9) 75%,
+    rgba(60, 170, 255, 0.95) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter:
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5))
+    drop-shadow(0 4px 14px rgba(40, 130, 255, 0.25))
+    drop-shadow(0 12px 40px rgba(40, 130, 255, 0.15));
+}
+
+html.dark .glass-text-accent::before {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 150, 255, 0.4),
+    rgba(120, 80, 255, 0.25),
+    rgba(80, 200, 255, 0.3)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: blur(22px);
 }
 
 /* ── Hero pills ────────────────────────────────────────── */
