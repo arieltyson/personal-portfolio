@@ -19,7 +19,7 @@ import rustIcon from "@/assets/tech/rust.png";
 import typescriptIcon from "@/assets/tech/typescript.svg";
 import golangIcon from "@/assets/tech/golang.svg";
 import appleLogo from "@/assets/company/apple.svg";
-import twitchLogo from "@/assets/company/twitch.png";
+import twitchLogo from "@/assets/company/twitch.svg";
 import workdayLogo from "@/assets/company/workday.png";
 import tealsLogo from "@/assets/company/microsoft_teals.png";
 import radLogo from "@/assets/company/rad.png";
