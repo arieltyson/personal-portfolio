@@ -27,7 +27,7 @@ const ExpertiseSection = (): JSX.Element => {
             transition={{ duration: 0.5, delay: index * 0.05, ease: [0.25, 0.1, 0.25, 1] }}
             onMouseMove={onMouseMove}
           >
-            <Card variant="glow" hue={serviceHues[index]} className="flex h-full flex-col items-center gap-4 text-center">
+            <Card variant="glow" hue={serviceHues[index]} className="h-full" contentClassName="flex flex-col items-center gap-4 text-center">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-apple-sm bg-surface-secondary p-2">
                   <img src={item.icon} alt="" className="h-8 w-8 object-contain" loading="lazy" />
