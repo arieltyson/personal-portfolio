@@ -109,11 +109,11 @@ export const heroContent: HeroContent = {
   subheading: "Software Engineer · Mobile & Machine Learning",
   description:
     "I build reliable, human-centered products across Apple platforms and the web, pairing thoughtful UX with secure, scalable services.",
-  meta: ["San Francisco Bay Area \u{1F1FA}\u{1F1F8} / Vancouver, BC \u{1F1E8}\u{1F1E6}", "Swift \u{00B7} Python \u{00B7} C++", "UX/UI \u{00B7} AR \u{00B7} ML \u{00B7} AI"]
+  meta: ["Vancouver, BC \u{1F1E8}\u{1F1E6}", "Swift \u{00B7} Python \u{00B7} C++", "UX/UI \u{00B7} AR \u{00B7} ML \u{00B7} AI"]
 };
 
 export const aboutDescription =
-  "Hi, I’m Ariel — a software engineer intern at Amazon (Twitch) and former Workday iOS engineer. I study Computer Science at Simon Fraser University, lead ColorStack through community-driven events, and enjoy turning emerging tech into accessible experiences.";
+  "Hi, I’m Ariel — a software engineer with internship experience at Apple, Amazon (Twitch), and Workday. I study Computer Science at Simon Fraser University, founded ColorStack SFU, and enjoy turning emerging tech into accessible experiences. Lately I’ve been building quantitative finance systems.";
 
 export const services: Service[] = [
   { title: "Web Interfaces", icon: webIcon, summary: "Accessible React experiences with polished motion and responsive design." },
@@ -148,33 +148,36 @@ export const experiences: Experience[] = [
     company: "Apple",
     period: "May 2026 - August 2026",
     highlights: [
-      "Working on the VoiceOver accessibility team to advance assistive technology across Apple platforms."
+      "Engineered Swift and Objective-C improvements to assistive technology infrastructure on the VoiceOver accessibility team.",
+      "Worked across decoupled macOS system services, where latency and reliability directly shape the experience of blind users."
     ],
     icon: appleLogo
   },
   {
     id: "twitch",
     role: "Software Engineer Intern",
-    company: "Twitch (Amazon)",
+    company: "Amazon (Twitch)",
     period: "May 2025 - August 2025",
     highlights: [
-      "Enabled anonymous session management and authentication powering 250M+ daily minutes on Twitch iOS.",
-      "Optimized async networking with Swift Concurrency, improving load performance for logged-out viewers.",
-      "Rolled out XCTest suites covering critical login and guest mode flows to safeguard global releases.",
-      "Ported Android GraphQL features to Swift/UIKit and refreshed Lottie animations for authentication surfaces."
+      "Enabled anonymous session state management and authentication, adding 250M+ daily minutes watched to the Twitch iOS app.",
+      "Leveraged Swift Concurrency with async/await to handle asynchronous network requests from a GraphQL backend.",
+      "Implemented discovery feeds powered by AI Personas, driving a 30% improvement in content engagement.",
+      "Customized interactive UI for anonymous users, reducing onboarding friction and boosting retention by 20%.",
+      "Ported Android Kotlin implementations to iOS and updated Go GraphQL schemas, improving recommendations by 10%."
     ],
     icon: twitchLogo
   },
   {
     id: "workday",
-    role: "Software Engineer Intern",
+    role: "Mobile Engineering Intern (iOS)",
     company: "Workday",
     period: "May 2024 - December 2024",
     highlights: [
-      "Delivered Objective-C and Swift features that streamline developer productivity tooling inside the Workday iOS app.",
-      "Hardened client-server security with tokenized authentication and audited protected API usage.",
-      "Shipped XCTest-driven UI flows to improve login resiliency across macOS and iPadOS clients.",
-      "Partnered with accessibility specialists to raise WCAG compliance using UIKit Accessibility APIs."
+      "Delivered Objective-C and Swift functionality for developer productivity tools and frameworks in the Workday iOS app.",
+      "Architected API designs with tokenized authentication, improving client-server protocol security.",
+      "Refactored Swift classes to MVVM and SOLID principles, supporting dependency injection and the factory pattern.",
+      "Implemented Signposts and Combine to track in-app navigation, increasing event observability by 75%.",
+      "Enhanced usability and WCAG compliance using Apple's Accessibility Inspector and the UIKit Accessibility API."
     ],
     icon: workdayLogo
   },
@@ -182,23 +185,21 @@ export const experiences: Experience[] = [
     id: "teals",
     role: "Teaching Assistant",
     company: "Microsoft TEALS",
-    period: "January 2024 - Present",
+    period: "January 2024 - August 2024",
     highlights: [
-      "Teach Grade 9 students core Python, debugging practices, and project-based problem solving.",
-      "Design inclusive assignments that develop computational thinking in diverse classrooms.",
-      "Support remote learners by adapting lessons for limited access to technology and resources."
+      "Conducted Python and Java tutorials, from debugging to functional application building with object-oriented design, with a 95% pass rate."
     ],
     icon: tealsLogo
   },
   {
     id: "rad",
-    role: "Software Developer Co-op",
+    role: "DevOps / Full-Stack Software Developer Intern",
     company: "RAD Torque Systems",
     period: "September 2023 - April 2024",
     highlights: [
-      "Ported torque calibration tools to .NET MAUI, trimming execution time by 20% across devices.",
-      "Automated CI/CD pipelines with Docker and Jenkins, reducing deployment cycles from hours to minutes.",
-      "Implemented Azure AD B2C authentication and migrated Excel workflows to SQL Server for secure, fast access."
+      "Developed a search feature with C# and .NET MAUI, consuming a RESTful API for multi-platform, real-time information access.",
+      "Automated infrastructure workflows with a Jenkins CI/CD pipeline, reducing deployment cycles from 2 hours to 10 minutes.",
+      "Hosted a web server with Flask and Docker to trigger stages of a custom DevOps flow."
     ],
     icon: radLogo
   }
