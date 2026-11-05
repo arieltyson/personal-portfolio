@@ -25,7 +25,7 @@ const ExperienceSection = (): JSX.Element => {
             transition={{ duration: 0.5, delay: index * 0.04, ease: [0.25, 0.1, 0.25, 1] }}
             onMouseMove={onMouseMove}
           >
-            <Card variant="glow" hue={210 + index * 40} className="flex flex-col gap-6">
+            <Card variant="glow" hue={210 + index * 40} contentClassName="flex flex-col gap-6">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <span className="h-14 w-14 shrink-0 overflow-hidden rounded-apple-sm bg-white ring-1 ring-black/10 dark:ring-white/10">

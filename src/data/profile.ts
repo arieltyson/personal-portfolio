@@ -113,13 +113,13 @@ export const heroContent: HeroContent = {
 };
 
 export const aboutDescription =
-  "Hi, I’m Ariel — a software engineer with internship experience at Apple, Amazon (Twitch), and Workday. I study Computer Science at Simon Fraser University, founded ColorStack SFU, and enjoy turning emerging tech into accessible experiences. Lately I’ve been building quantitative finance systems.";
+  "Hi, I’m Ariel, a software engineer who has worked at Apple, Amazon (Twitch), and Workday. I study Computer Science at Simon Fraser University, founded ColorStack SFU, and enjoy turning emerging tech into accessible experiences. Lately I’ve been building quantitative finance systems.";
 
 export const services: Service[] = [
-  { title: "Web Interfaces", icon: webIcon, summary: "Accessible React experiences with polished motion and responsive design." },
-  { title: "iOS Experiences", icon: mobileIcon, summary: "SwiftUI, UIKit, and RealityKit apps tuned for performance and delight." },
-  { title: "Cloud Systems", icon: backendIcon, summary: "Secure APIs, Azure pipelines, and observability-first architecture." },
-  { title: "Team Leadership", icon: creatorIcon, summary: "Mentoring, curriculum design, and community-building through ColorStack." }
+  { title: "AI Infrastructure", icon: webIcon, summary: "Distributed pipelines and efficient model inference built for production reliability." },
+  { title: "Mobile Systems", icon: mobileIcon, summary: "Swift, SwiftUI, and UIKit architecture tuned for performance and accessibility." },
+  { title: "Machine Learning", icon: backendIcon, summary: "PyTorch, LightGBM, and NLP models, from feature engineering through evaluation." },
+  { title: "Quantitative Systems", icon: creatorIcon, summary: "Limit order books, tick data, and market making research in C++ and kdb+/q." }
 ];
 
 export const technologies: Technology[] = [

@@ -6,11 +6,12 @@ type CardVariant = "default" | "glow" | "gradient";
 type CardProps = PropsWithChildren<{
   as?: keyof JSX.IntrinsicElements;
   className?: string;
+  contentClassName?: string;
   variant?: CardVariant;
   hue?: number;
 }>;
 
-const Card = ({ as: Component = "div", className, variant = "default", hue, children }: CardProps): JSX.Element => {
+const Card = ({ as: Component = "div", className, contentClassName, variant = "default", hue, children }: CardProps): JSX.Element => {
   const base = "relative rounded-apple transition-all duration-500 ease-out";
 
   if (variant === "glow") {
@@ -19,7 +20,7 @@ const Card = ({ as: Component = "div", className, variant = "default", hue, chil
         className={cn(base, "card-glow group", className)}
         style={hue !== undefined ? { "--card-hue": hue } as React.CSSProperties : undefined}
       >
-        <div className="relative z-10">{children}</div>
+        <div className={cn("relative z-10", contentClassName)}>{children}</div>
       </Component>
     );
   }
