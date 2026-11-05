@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import brandMark from "@/assets/at-circle-icon.png";
+import brandMark from "@/assets/logo-circle.png";
 import menuIcon from "@/assets/menu.svg";
 import closeIcon from "@/assets/close.svg";
 import { navigation } from "@/data/profile";
