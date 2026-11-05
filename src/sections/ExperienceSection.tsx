@@ -28,8 +28,8 @@ const ExperienceSection = (): JSX.Element => {
             <Card variant="glow" hue={210 + index * 40} className="flex flex-col gap-6">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <span className="inline-flex h-14 w-14 items-center justify-center rounded-apple-sm bg-surface-secondary p-2">
-                    <img src={experience.icon} alt="" className="h-10 w-10 object-contain" loading="lazy" />
+                  <span className="h-14 w-14 shrink-0 overflow-hidden rounded-apple-sm bg-white ring-1 ring-black/10 dark:ring-white/10">
+                    <img src={experience.icon} alt="" className="h-full w-full object-contain" loading="lazy" />
                   </span>
                   <div>
                     <p className="text-base font-semibold text-text-primary">{experience.role}</p>
